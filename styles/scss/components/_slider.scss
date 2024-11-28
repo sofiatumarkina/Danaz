@@ -1,0 +1,78 @@
+.slider {
+  background-color: var(--section-background-color);
+  width: auto;
+  margin: auto;
+  padding-bottom: 0;
+  height: 100%;
+  padding-top: 30px;
+  &-card-1 {
+    background-image: url("/images/photos/persons/person1.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    height: 500px;
+    @media (width = 768px) {
+        height: 300px;
+    }
+    @media (width < 768px) {
+        max-height: 260px;
+        min-height: 200px;
+    }
+  }
+  &-card-2 {
+    background-image: url("/images/photos/persons/person2.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    height: 500px;
+    @media (width = 768px) {
+        height: 300px;
+    }
+    @media (width < 768px) {
+        max-height: 260px;
+        min-height: 200px;
+    }
+  }
+  &-card-3 {
+    background-image: url("/images/photos/persons/person3.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    height: 500px;
+    @media (width = 768px) {
+        height: 300px;
+    }
+    @media (width < 768px) {
+        max-height: 260px;
+        min-height: 200px;
+    }
+  }
+  &__text-block {
+    background-color: white;
+    padding: 15px;
+    width: max-content;
+    margin: auto;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    @media (width = 768px) {
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    @media (width < 768px) {
+        padding: 5px;
+        margin-bottom: 5px;
+    }
+
+    &-title {
+      color: var(--title-text-color);
+      font-weight: 500;
+    }
+    p {
+      margin: 0;
+    }
+  }
+}

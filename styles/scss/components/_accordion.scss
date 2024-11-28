@@ -1,0 +1,30 @@
+.accordion {
+  color: black !important;
+  @media (width <= 768px) and (width > 400px){
+    width: 70% !important;
+  }
+  @media (width <= 400px) {
+    width: 100% !important;
+  }
+  &-button {
+    background: none !important;
+    border: none !important;
+    &:hover {
+      border: none !important;
+    }
+  }
+  &-arrow {
+    width: 30px;
+    height: auto;
+  }
+
+  &-item {
+    border: none !important;
+  }
+  &-header {
+    border: none !important;
+  }
+  &-collapse {
+    border: none !important;
+  }
+}
